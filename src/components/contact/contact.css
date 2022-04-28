@@ -81,6 +81,26 @@ button {
   border-radius: 10%;
 }
 
+.footer{
+  background-color: #333;
+  text-align: center;
+  height: 50px;
+
+}
+
+.footer-text{
+  color: white;
+  background-color: rgba(0,0,0,0.2);
+  font-weight: 500;
+  text-align: center;
+  padding: 4px;
+}
+
+.footer-text.a{
+  color: white;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 480px) {
   .c-wrapper {
     flex-direction: column;

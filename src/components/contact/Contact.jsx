@@ -2,6 +2,8 @@ import React, { useContext, useRef, useState } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
 import { ThemeContext } from "../../context";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   const formRef = useRef();
@@ -98,6 +100,18 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <footer className="footer">
+        <div class="footer-text">
+          <p>
+            Made with
+            <FontAwesomeIcon icon="fa-solid faHeart" /> by
+            <a href="https://jenperez.dev">Jen Perez</a>. The source code is
+            licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. ©
+            2022
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };
